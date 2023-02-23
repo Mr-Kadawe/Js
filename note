@@ -1,0 +1,135 @@
+In JavaScript the three most common types of data types are:
+    - numbers 90
+    - strings '90', ""
+    - Boolean (True or False)
+
+A variable is a way to store information so that you can use and manipulate it
+
+
+
+Two-step process:
+   - declare the variable - (let , var and const)
+   - name the variable
+//const n2 ;// error
+// const n1 = 3.14 (MUST BE initialize);
+
+
+
+var can be redeclare and reinitialize 
+let cannot be redeclare but can be reinitialize
+const  cannot be redeclare and reinitialize  
+
+// operators
+There are different types of JavaScript operators:
+
+String Opertor .
+Aritmetic Operators .
+Assignment Operators .
+Comparison Operators
+Logical Operators
+Conditional Operators 
+Type Operators
+
+
+
+ - The assignment operator (=) assigns a value to a variable.
+
+
+ - The addition operator (+) adds numbers:
+ - The multiplication operator (*) multiplies numbers.
+ - The Devission operator (*) Devission numbers.
+ - The Substraction operator (*) Substraction numbers.
+ - The Module( Division Remainder) operator (%) Remainder numbers.
+ - The Increment And Decrement. 
+
+In JavaScript we have the following conditional statements:
+
+- Use ` if ` to specify a block of code to be executed, if a specified condition is true
+
+- Use ` else ` to specify a block of code to be executed, if the same condition is false
+
+- Use ` else if ` to specify a new condition to test, if the first condition is false
+
+- Use ` switch ` to specify many alternative blocks of code to be executed
+
+
+----------------------------
+ 
+Comparison Operators
+ 
+-- Comparison operators are used in logical statements to determine equality or difference between variables or values.
+
+-- Comparison operators can be used in conditional statements to compare values and take action depending on the result.
+
+---------------------------
+Logical Operators
+
+Logical operators are used to determine the logic between variables or values.
+
+---------------------------
+
+
+ JavaScript Loops
+    - For Loop 
+    - While Loop
+    - Do While Loop
+
+
+JavaScript Array
+An array is a special variable, which can hold more than one value:
+
+.. Array Methods 
+
+push() – add one or more elements to the end of an array.
+unshift() – add one or more elements to the beginning of an array.
+pop() – remove an element from the end of an array.
+shift() – remove the first element from an array.
+splice() – manipulate elements in an array such as deleting, inserting, and replacing elements.
+sort() - the  sort order is ascending
+reverse() -  the first array element now becoming the last, and the last array element becoming the first.
+
+
+A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+Anonymous Function
+It is a function that does not have any name associated with it. Normally we use the function keyword before the function name to define a function in JavaScript, however, in anonymous functions in JavaScript, we use only the function keyword without the function name
+
+
+-- Arrow functions allow us to write shorter function syntax
+
+The forEach() method calls a function for each element in an array.
+
+
+
+
+<!-- DOM Munipulation -->
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+DOM, JavaScript can access and change all the elements of an HTML document.
+ DOM(Document Object Model) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content,
+
+
+Add Event Listener DOM Event Types
+Mouse Events: click, dblclick, mousedown, mouseup, contextmenu, mouseout, mousewheel, mouseover.
+
+Touch Events: touchstart, touchend, touchmove, touchcancel.
+
+Keyboard Events: keydown, keyup, keypress.
+
+Form Events: focus, blur, change, submit.
+
+ function validateEmail(email) 
+    {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
