@@ -28,6 +28,12 @@ document.getElementById('btn').style.padding = "6px";
 document.getElementById('btn').style.margin = "12px 0px 0px 15px";
 document.getElementById("btn").style.fontSize = "23px";
 
+document.getElementById("btn_events").style.color = "white";
+document.getElementById("btn_events").style.backgroundColor = "green";
+document.getElementById('btn_events').style.padding = "6px";
+document.getElementById('btn_events').style.margin = "12px 0px 0px 15px";
+document.getElementById("btn_events").style.fontSize = "23px";
+
 //reset
 document.getElementById("reset").style.color = "white";
 document.getElementById("reset").style.backgroundColor = "red";
@@ -47,40 +53,40 @@ document.getElementById("reset").style.fontSize = "23px";
 // }
 document.getElementById("btn").onclick = ()=>{
     // alert("onclick");
-  btnClick();
-  byName();
-  byClassName();
+    btnClick();
+    byName();
+    byClassName();
 
-  // byName
+    // byName
 
-// let names =  document.getElementsByName('names');
-//   // alert(names[0].innerHTML);
-//   // alert(names[1].innerHTML);
-//   // alert(names[2].innerHTML);
-
-
-//   console.log(names[0].innerHTML);
-//   console.log(names[1].innerHTML);
-//   console.log(names[2].innerHTML);
-//   console.log("Names Array Length is : " + names.length);
+  // let names =  document.getElementsByName('names');
+  //   // alert(names[0].innerHTML);
+  //   // alert(names[1].innerHTML);
+  //   // alert(names[2].innerHTML);
 
 
-//   // display Names
-//   document.getElementById('display_names').innerHTML = names[0].innerHTML + '<br>' + names[1].innerHTML + '<br>' + names[2].innerHTML;
-
-//   let input_val = document.getElementById('input_text').value;
-//   document.getElementById("input_value_show").innerHTML += input_val + "<br>";
- 
-//   document.getElementById("input_text").value = '';
+  //   console.log(names[0].innerHTML);
+  //   console.log(names[1].innerHTML);
+  //   console.log(names[2].innerHTML);
+  //   console.log("Names Array Length is : " + names.length);
 
 
-// byClassName
-// let className = document.getElementsByClassName('class_name');
-// alert(className.length);
+  //   // display Names
+  //   document.getElementById('display_names').innerHTML = names[0].innerHTML + '<br>' + names[1].innerHTML + '<br>' + names[2].innerHTML;
+
+  //   let input_val = document.getElementById('input_text').value;
+  //   document.getElementById("input_value_show").innerHTML += input_val + "<br>";
+  
+  //   document.getElementById("input_text").value = '';
 
 
-// document.getElementById("display_className").innerHTML = className[0].innerHTML+" . <br>";
-// document.getElementById("display_className").innerHTML += className[1].innerHTML; 
+  // byClassName
+  // let className = document.getElementsByClassName('class_name');
+  // alert(className.length);
+
+
+  // document.getElementById("display_className").innerHTML = className[0].innerHTML+" . <br>";
+  // document.getElementById("display_className").innerHTML += className[1].innerHTML; 
 
 
 }
@@ -222,7 +228,66 @@ function byClassName()
 }
 
 
+// 03-03-2023
 
+// Event Listner
+// document.getElementById("btn_events").addEventListener('click', function(){
+//   document.getElementById("body").style.backgroundColor = "grey";
+//   byName();
+//   byClassName();
+// });
+
+document.getElementById('btn_events').addEventListener('dblclick', () =>{
+  btnClick();
+})
+
+// document.getElementById("btn_events").addEventListener('mousedown', ()=>{
+//   alert("MouseDown");
+// })
+
+// document.getElementById("btn_events").addEventListener("mouseup", function(){
+//   alert("MouseUp");
+// })
+
+document.getElementById("btn_events").addEventListener('mouseleave', function(){
+  // alert("Mouse Leave");
+  document.getElementById("event_list").innerHTML += " Mouse Leave (OUT) <br>";
+  document.getElementById("btn_events").style.padding = "8px";
+  document.getElementById("btn_events").style.width = "100px";
+})
+
+document.getElementById("btn_events").addEventListener("mouseover", function(){
+  document.getElementById("event_list").innerHTML += "Mouser Over (IN) <br>";
+  document.getElementById("btn_events").style.backgroundColor = "black";
+  document.getElementById("btn_events").style.padding = "6px";
+})
+
+document.getElementById("btn_events").addEventListener("mouseout", function(){
+  document.getElementById("event_list").innerHTML += "Mouse Out (OUT) <br>";
+  document.getElementById("btn_events").style.backgroundColor = "blue";
+})
+
+
+document.getElementById("btn_events").addEventListener("mouseenter", function(){
+  document.getElementById("event_list").innerHTML += "Mouse Enter (IN) <br>";
+  document.getElementById("btn_events").style.width = "150px";
+})
+
+document.getElementById("btn_events").addEventListener("keydown", ()=>{
+  alert("KeyDown");
+})
+document.getElementById("btn_events").addEventListener("keypress", ()=>{
+  alert("KeyPress");
+})
+document.getElementById("btn_events").addEventListener("keyup", ()=>{
+  alert("KeyUp");
+})
+
+document.getElementById("input_text").addEventListener("keyup",()=>{
+  // alert("Keyup");
+  let val = document.getElementById("input_text").value;
+  document.getElementById("event_to_input").innerHTML = val;
+})
 
 
 

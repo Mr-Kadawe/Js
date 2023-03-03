@@ -120,13 +120,14 @@ DOM, JavaScript can access and change all the elements of an HTML document.
 
 
 Add Event Listener DOM Event Types
-Mouse Events: click, dblclick, mousedown, mouseup, contextmenu, mouseout, mousewheel, mouseover.
+Mouse Events: click, dblclick, mousedown, mouseup, contextmenu, mouseout, mousewheel, mouseover, mpousemove , mouseleave.
 
 Touch Events: touchstart, touchend, touchmove, touchcancel.
 
 Keyboard Events: keydown, keyup, keypress.
 
 Form Events: focus, blur, change, submit.
+
 
  function validateEmail(email) 
     {
